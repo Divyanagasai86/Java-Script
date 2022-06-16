@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+    <link rel="stylesheet" href="factorial.css"/>
+</head>
+<body>
+    <h1>Calculate factorial of a number</h1>
+    <form id="form">
+      <input type="number" id="number" placeholder="Enter number" />
+      <br><br>
+      <input type="submit" value="check"/>
+    </form>
+    <p id="result"></p>
+    <script>
+       const form = document.getElementById("form");
+       form.onsubmit = function() {
+        const num = document.getElementById("number").value;
+        const result = document.getElementById("result");
+        var i, fact=1;
+        for (i= 1; i<=num; i++){
+          fact = fact * i;
+        }
+        result.innerHTML =  fact;
+        return false;
+       }
+     
+    </script>
+</body>
+</html>
