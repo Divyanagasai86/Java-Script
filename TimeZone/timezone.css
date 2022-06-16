@@ -1,0 +1,40 @@
+.container{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8e8tcwRKwEz_8kIjvbC8wI46jCPUBItv0g&usqp=CAU");
+    background-size:cover;
+    min-height: 89vh;
+    text-align:center;
+    font-family: roboto;
+    padding: 25px;
+    overflow:hidden;
+}
+
+
+
+.heading{
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+.label{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.select{
+    width: 15%;
+    padding:10px;
+}
+
+.button{
+    margin-top: 25px;
+    background-color:orange;
+    padding: 15px;
+    border-radius: 20px;
+    color:white;
+}
+
+.content{
+    font-size:25px; 
+    font-weight: bold;
+}
