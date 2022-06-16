@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="register.css" />
+</head>
+
+<body>
+    <div class="registration-form">
+        <div class="left-container" style>
+            <div class="contact-heading">
+                <span>Register Form</span>
+            </div>
+        </div>
+        <div class="right-container">
+            <form class="form" id="myform" name="myform">
+                <input type="text" class=input id="fname" name="firstname" placeholder="Enter First Name" />
+                <input type="text" class=input id="lname" name="lastname" placeholder="Enter Last Name" />
+                <input type="email" class=input id="email" name="email" placeholder="Enter your Email id" />
+                <input type="password" class=input id="pass1" name="password1" placeholder="Enter your password" />
+                <input type="password" class=input id="pass2" name="password2" placeholder="Re-enter your password" />
+                <div class="gender">
+                    <span>Gender:- </span>
+                    <input type="radio" id="male" name="Gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="Gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+                <div class="languages">
+                    <span>Languages Known:-</span>
+                    <input type="checkbox" id="english" name="languages" value="English" />
+                    <label for="English">English</label>
+                    <input type="checkbox" id="telugu" name="languages" value="Telugu" />
+                    <label for="telugu">Telugu</label>
+                    <input type="checkbox" id="hindi" name="languages" value="Hindi" />
+                    <label for="hindi">Hindi</label>
+                </div>
+                <div class="country">
+                    <label for="country">Choose your country:</label>
+                    <select id="country" name="country">
+                        <option value="India">India</option>
+                        <option value="US">US</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                </div>
+                <div class="address">
+                    <label for="msg">Enter your Address:</label>
+                    <textarea id="msg" name="message" rows="3" cols="30"
+                        placeholder="Type your address here"></textarea>
+                </div>
+                <div class="buttons">
+                    <input type="submit" class="button" id="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="register.js"></script>
+
+</html>
