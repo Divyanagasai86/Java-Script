@@ -1,0 +1,26 @@
+<html>
+<head>
+    <link rel="stylesheet" href="callback.css"/>
+</head>
+<body>
+    <div  class="heading">
+        <h1> Hello Welcome Everyone </h1>
+
+    </div>
+    <script>
+
+        function showData(name, num) {
+           alert(' Hello User ' + name + '\n Your entered AccountNumber is ' + num);
+        }
+
+        function getData(callback) {
+
+            var name = prompt(" Welcome please enter \n What is your name?");
+            var num = prompt(" Enter some number...");
+            callback(name, num);
+        }
+        getData(showData);
+
+    </script>
+
+</body>
