@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeZone</title>
+    <link href="timezone.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">TIMEZONE TO DISPLAY TIME </h1>
+        <br>
+
+        <div class="timezone">
+            <label class="label">Select the country:</label>
+            <br><br>
+            <select id="timezone" name="countrytime" class="select">
+                <option value="UTC+3">MSK(Moscow)</option>
+                <option value="UTC+4">UAE</option>
+                <option value="UTC+5:30" selected>IST(Mumbai)</option>
+                <option value="UTC+8">Singapore</option>
+                <option value="UTC-7">PST (US)</option>
+                <option value="UTC+1">BST (London)</option>
+                <option value="UTC+2">CEST (Berlin)</option>
+                <option value="UTC+8">CST(Beijing)</option>
+                <option value="UTC+9">JST(Tokyo)</option>
+                <option value="UTC+10">AEST(Sydney,AUS)</option>
+                <option value="UTC-6">MST (US)</option>
+                <option value="UTC-5">CST (US)</option>
+                <option value="UTC-4">EST (US)</option>
+                <option value="UTC-3">Rio - brazil</option>
+                <option value="UTC-2">UTC</option>
+                <option value="UTC+12">NZST(Auckland,NZ)</option>
+            </select>
+            <br>
+            <button class="button" onClick="getTime()">Display Time</button>
+            <br>
+            <p id="content" class="content"></p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/1.25.0/luxon.js"></script>
+</body>
+<script src="timezone.js"></script>
+
+</html>
